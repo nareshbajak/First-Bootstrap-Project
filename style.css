@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.book-table button {
+    padding: 8px 28px;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #CE1212;
+}
+
+.custom-link {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.custom-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5%;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.custom-link:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    padding: 140px 0px 50px 0px;
+}
+
+/* Image Rotate Animation */
+.rotate {
+    animation: spin 28s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-card h1 {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 64px;
+    color: #37373F;
+    font-weight: bold;
+}
+
+.hero-card p {
+    font-size: 20px;
+    color: #37373F;
+}
+
+.main-hero {
+    background-color: #F2F2F2;
+
+}
+
+.about-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.about-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.about-section {
+    padding: 60px 0px;
+}
+
+.about-border {
+    padding: 22px;
+}
+
+.about-border h3 {
+    font-size: 24px;
+    color: #37373F;
+    font-weight: bold;
+}
+
+.about-border span {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.about-text-2 {
+    font-size: 17px;
+}
+
+.why-section-bg {
+    background-color: #F2F2F2;
+}
+
+.why-section {
+    padding: 60px 0px;
+}
+
+.why-card {
+    background-color: #FFFFFF;
+}
+
+.why-card h4 {
+    font-size: 24px;
+    margin: 0px 0px 30px;
+}
+
+.why-card p {
+    font-size: 15px;
+    color: #37373F;
+}
+
+.why-card-1 {
+    padding: 30px;
+    color: #FFFFFF;
+    background-color: #CE1212;
+}
+
+.why-card-1 h3 {
+    font-size: 33px;
+    margin: 0px 0px 30px;
+}
+
+.why-card-1 p {
+    font-size: 14px;
+    margin: 0px 0px 30px;
+}
+
+.why-card-1 button {
+    padding: 8px 40px 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+    background-color: #76767657;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.why-img i {
+    background-color: rgb(223, 217, 217);
+    display: flex;
+    font-size: 23px;
+    color: #CE1212;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 30px;
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.subscribe-section {
+    background-image: url("images/stats-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    width: 100%;
+    /* padding: 60px 0; */
+    overflow: hidden;
+}
+
+.subscribe-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.77);
+    /* Transparent black */
+    z-index: 1;
+}
+
+.subscribe-color {
+    padding: 60px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    min-width: 100%;
+}
+
+.subscribe-card {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.subscribe-card span {
+    font-size: 48px;
+}
+
+.subscribe-row {
+    margin: -24px -12px 0px;
+    padding: 100px;
+    z-index: 100;
+}
+
+.subscribe-color {
+    background-color: #000000ba;
+}
+
+.menu-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.menu-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.menu-card img {
+    margin: 0px 0px 15px;
+    padding: 0px 48px;
+}
+
+.menu-card h4 {
+    margin: 0px 0px 5px;
+    font-size: 24px;
+}
+
+.menu-card .ingredints {
+    font-size: 16px;
+    margin: 0px 0px 5px;
+}
+
+.menu-card .price {
+    font-size: 24px;
+    color: #CE1212;
+    margin: 0px 0px 16px;
+    font-weight: bold;
+}
+
+.testimonials-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.testimonials-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.testimonials-bg {
+    background-color: #F2F2F2;
+}
+
+.test-card i {
+    color: rgb(232, 206, 8);
+}
+
+.test-card h3 {
+    font-size: 20px;
+    font-family: Amatic Sc, sans-serif;
+    margin: 10px 0px 5px;
+}
+
+.test-card {
+    border-left: 3px solid #CE1212;
+}
+
+.test-card h4 {
+    font-size: 14px;
+    font-family: Amatic Sc, sans-serif;
+    margin: 0px 0px 10px;
+}
+
+.test-main img {
+    border-radius: 60%;
+}
+
+.event-section {
+    margin: 60px 0px;
+}
+
+.events-card1 {
+    position: relative;
+    background-image: url("/images/events-2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 2px solid #FFFFFF;
+}
+
+.events-card1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.608);
+    /* black + transparency */
+    /* backdrop-filter: blur(2px); */
+    /* हल्का blur */
+    z-index: 1;
+}
+
+.events-card1 h3 {
+    font-size: 24px;
+    margin: 0px 0px 5px;
+    font-family: Amatic Sc, sans-serif;
+    font-weight: bold;
+    padding-top: 300px;
+}
+
+.events-card1 span {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #CE1212;
+    margin: 0px 0px 15px;
+}
+
+.events-card1 p {
+    font-size: 16px;
+}
+
+.events-card2 {
+    position: relative;
+    background-image: url("/images/events-3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 2px solid #FFFFFF;
+}
+
+.events-card2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.608);
+    /* black + transparency */
+    /* backdrop-filter: blur(2px); */
+    /* हल्का blur */
+    z-index: 1;
+}
+
+.events-card2 h3 {
+    font-size: 24px;
+    margin: 0px 0px 5px;
+    font-family: Amatic Sc, sans-serif;
+    font-weight: bold;
+    padding-top: 300px;
+}
+
+.events-card2 span {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #CE1212;
+    margin: 0px 0px 15px;
+}
+
+.events-card2 p {
+    font-size: 16px;
+}
+
+.events-card3 {
+    position: relative;
+    background-image: url("/images/events-4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.events-card3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.608);
+    z-index: 1;
+}
+
+.events-card3 h3 {
+    font-size: 24px;
+    margin: 0px 0px 5px;
+    font-family: Amatic Sc, sans-serif;
+    font-weight: bold;
+    padding-top: 300px;
+}
+
+.events-card3 span {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #CE1212;
+    margin: 0px 0px 15px;
+}
+
+.events-card3 p {
+    font-size: 16px;
+}
+
+.events-bg {
+    position: relative;
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* Optional: inner black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chefs-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.chefs-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.chefs-card {
+    padding: 0px 12px;
+    color: #212529;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.chefs-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.member-info {
+    padding: 10px 15px 20px;
+}
+
+.member-info h4 {
+    padding: 0px 0px 5px;
+    font-size: 20px;
+    color: #37373F;
+}
+
+.member-info span {
+    font-size: 14px;
+    color: #37373fa3;
+}
+
+.member-info p {
+    font-size: 14px;
+    margin: 0px 0px 16px;
+    padding: 10px 0px 0px;
+}
+
+.tableBook-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.tableBook-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.book-row {
+    background-color: #F2F2F2;
+}
+
+.form-div button {
+    padding: 14px 60px;
+    background-color: #CE1212;
+    color: #FFFFFF;
+    border-radius: 4px;
+    line-height: inherit;
+    margin: 0;
+}
+
+.gallery-bg {
+    background-color: #F2F2F2;
+}
+
+.gallery-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.gallery-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.gallery-1 img {
+    max-height: 170px;
+    max-width: 216px;
+}
+
+.gallery-2 img {
+    max-height: 200px;
+    max-width: 268px;
+    border: 10px solid #CE1212;
+    object-fit: none;
+}
+
+.contact-section h2 {
+    font-size: 13px;
+    color: rgba(19, 17, 17, 0.619);
+}
+
+.contact-section .about-text {
+    font-family: Amatic Sc, sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 0px;
+}
+
+.c-logo i {
+    background-color: #CE1212;
+    border-radius: 50%;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-details h3 {
+    font-size: 20px;
+    margin: 10px 0px 5px;
+}
+
+.logo-details p {
+    font-size: 14px;
+}
+
+.contactForm {
+    background-color: #FFFFFF;
+    margin: 30px 0px 0px;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.submit-btn button {
+    background-color: #CE1212;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+.footer-section {
+    margin-top: 60px;
+    padding: 40px 0px;
+    background-color: #1F1F24;
+}
+
+.footer-card h4 {
+    font-size: 16px;
+    padding: 0px 0px 15px;
+}
+
+.footer-card p {
+    font-size: 14px;
+}
+
+.footer-card i {
+    font-size: 23px;
+    color: #CE1212;
+}
+
+.footer-icon .facebook i {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-icon .facebook i:hover {
+    color: #CE1212;
+    border: 1px solid #CE1212;
+}
+
+.footer {
+    border-bottom: 1px solid #37373F;
+    padding: 20px;
+}
+
+.footer-last p {
+    font-size: 14px;
+}
+
+.footer-last .text {
+    font-size: 13px;
+}

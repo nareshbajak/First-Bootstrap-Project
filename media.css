@@ -1,0 +1,33 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    .hero-card h1{
+        font-size: 27px;
+        margin-top: 20px;
+    }
+    .hero-card p{
+        font-size:  17px;
+    }
+    .why-row{
+        flex-direction: column;
+    }
+    .why-img{
+        margin-top: 25px;
+    }
+    .why-card p{
+        padding-bottom: 25px;
+    }
+    .testimonials-section .about-text{
+        font-size: 35px;
+        text-align: center;
+    }
+    .chefs-section .about-text{
+        font-size: 45px;
+        text-align: center;
+    }
+    .chefs-card{
+        width: 100%;
+    }
+     .tableBook-section .about-text{
+        font-size: 39px;
+        text-align: center;
+    }
+}
