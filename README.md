@@ -21,4 +21,4 @@ CSS3
 Bootstrap 5
 
 Live Demo 🌐
-👉 [https://first-bootstrap-project-orcin.vercel.app/]
+👉 [https://first-bootstrap-project-yummy.vercel.app/]
